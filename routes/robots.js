@@ -6,15 +6,13 @@ const db = require('../db');
 routes.get('/', (req, res) => {
   let collection1 = db.get().collection('robot');
 
-console.log("test")
 
     collection1.find({}).toArray(function(err, robot) {
-    res.render('index', { robot: robot });
+    res.render('home', { robot: robot });
   });
 });
 
 
-console.log("test2")
 
 routes.get('/:username', (req, res) => {
   let collection2 = db.get().collection('robot');
@@ -24,6 +22,5 @@ routes.get('/:username', (req, res) => {
     console.log(req.params.username);
   });
 });
-console.log("test3")
 
 module.exports = routes;

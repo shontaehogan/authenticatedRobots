@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Robot</title>
+  </head>
+  <body>
+      <main class=userMain>
+
+{{#robot}}
+        <a href="/{{username}}"> <img src="{{avatar}}"> </a>
+
+        <section class="contact">
+          <h1>{{name}}</h1>
+
+          <p>
+              {{address.city}}
+
+              {{address.country}}
+
+              {{job}} {{company}}
+
+              <span class="unemployed">
+                Available for hire
+              </span>
+
+            <br />
+
+              {{email}}
+
+              {{phone}}
+          </p>
+        </section>
+
+          <h3>
+            Education
+          </h3>
+
+          <span>
+            {{university}}
+          </span>
+          <h3>
+            Skills
+          </h3>
+          <div class="skillList">
+              {{skills}}
+          </div>
+{{/robot}}
+    </main>
+
+  </body>
+</html>

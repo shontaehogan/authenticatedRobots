@@ -1,0 +1,82 @@
+
+.usersMain {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.userMain {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 250px 50px 1fr;
+  line-height: 150%;
+  align-items: flex-end;
+}
+
+/*p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: DodgerBlue;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 0;
+  align-self: flex-end;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.robot {
+  display: grid;
+  grid-template-rows: 150px 30px 1fr;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.robot img {
+  margin: auto;
+}
+
+.unemployed {
+  color: red;
+}
+
+.userMain img {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  align-self: flex-end;
+  margin: auto 20px 0 auto;
+}
+
+.contact {
+  align-self: flex-end;
+}
+
+.skillList {
+  grid-column: 2;
+}
